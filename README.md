@@ -41,4 +41,4 @@ The following table outlines the test scenarios automated for the VegasInsider w
 | Prevents a user from signing up if the email is not valid                      | Ensures the system shows an error message when the user enters an invalid email format during sign-up.            |
 | Prevents a user from signing up if the betting state is not selected           | Checks that an error message is displayed when the betting state is not provided in the sign-up form.             |
 | Prevents a user from signing up if the email already exists                    | Validates that the form displays an error message when trying to sign up with an email that is already in use.    |
-| Prevents a user from signing up if the password is less than 6 characters long | Validates that the the user shows an appropiate message when a password less than 6 characters long is placed.    |
+| Prevents a user from signing up if the password is less than 6 characters long | Validates that the form shows appropriate error message when a password less than 6 characters long is placed.    |
