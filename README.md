@@ -2,7 +2,9 @@
 
 This repository contains the automation project for VegasInsider as part of the Better Collective challenge. The project is built using Playwright for its simplicity and speed, and TypeScript as the programming language for better type safety and maintainability.
 
-## Project Setup
+## Project
+
+### Setup
 
 To set up the project and install the necessary dependencies, follow these steps:
 
@@ -25,6 +27,33 @@ To set up the project and install the necessary dependencies, follow these steps
     npm init playwright@latest
 ```
 
+### Structure
+
+```
+vegasinsider-bettercollectivechallenge/
+│
+├── tests/signup
+│ ├── signUpPath.spec.ts
+│ ├── successfulSignUp.spec.ts
+│ └── unsuccessfulSignUp.spec.ts
+│
+├── pages/
+│ ├── index.ts
+│ ├── landingPage.ts
+│ ├── signUpPage.ts
+│ └── mainUserPage.ts
+│
+├── utils/
+│ └── Constants.ts
+│ └── Utils.ts
+│
+├── playwright.config.ts
+├── tsconfig.json
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
 ## Why Playwright
 
 I chose Playwright for this project due to its ability to easily handle modern web applications, its cross-browser support, and its speed in executing tests. Playwright provides a robust API for testing different scenarios, including handling dynamic content, interacting with different browsers, and automating complex workflows.
@@ -42,3 +71,26 @@ The following table outlines the test scenarios automated for the VegasInsider w
 | Prevents a user from signing up if the betting state is not selected           | Checks that an error message is displayed when the betting state is not provided in the sign-up form.             |
 | Prevents a user from signing up if the email already exists                    | Validates that the form displays an error message when trying to sign up with an email that is already in use.    |
 | Prevents a user from signing up if the password is less than 6 characters long | Validates that the form shows appropriate error message when a password less than 6 characters long is placed.    |
+
+## How to run tests
+
+To run all tests:
+
+```
+    npm run test
+
+```
+
+To run a specific tests
+
+```
+    npm run test:filter "Allows a new user to successfully sign up"
+
+```
+
+To run all tests on a specific browser:
+
+```
+    npm run test:browser chromium
+
+```

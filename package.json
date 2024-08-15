@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:filter": "npx playwright test --grep",
+    "test:browser": "npx playwright test --project"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
