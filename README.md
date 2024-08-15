@@ -10,16 +10,16 @@ To set up the project and install the necessary dependencies, follow these steps
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/yourusername/vegasinsider-automation.git
-   cd vegasinsider-bettercollectivechallenge
-   ```
+```
+git clone https://github.com/yourusername/vegasinsider-automation.git
+cd vegasinsider-bettercollectivechallenge
+```
 
 2. Install dependencies
 
-   ```
-       npm install --save-dev @types/node @playwright/test @faker-js/faker
-   ```
+```
+    npm install --save-dev @types/node @playwright/test @faker-js/faker
+```
 
 3.Initialize Playwright:
 
@@ -78,19 +78,16 @@ To run all tests:
 
 ```
     npm run test
-
 ```
 
 To run a specific tests
 
 ```
     npm run test:filter "Allows a new user to successfully sign up"
-
 ```
 
 To run all tests on a specific browser:
 
 ```
     npm run test:browser chromium
-
 ```
