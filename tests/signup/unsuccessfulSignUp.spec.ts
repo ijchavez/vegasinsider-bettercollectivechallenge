@@ -84,6 +84,20 @@ test("Prevents a user from signing up if the email already exists", async ({
   );
 });
 
+test("Prevents a user from signing up if the password is less than 6 characters long", async ({
+  page,
+}) => {
+  await signUpPage.enterEmailForSignUp(testUser.email);
+  await signUpPage.enterPasswordForSignUp(generatePassword(5));
+  await signUpPage.enterStateCodeByValue(testUser.stateCode);
+
+  await signUpPage.clickOnCreateAnAccountBtn();
+
+  await expect(await signUpPage.getValidationErrorsMessage()).toHaveText(
+    ` ${PASSWORD_LENGTH_ERROR_MSG}`
+  );
+});
+
 test.afterEach("Status check", async ({ page }, testInfo) => {
   console.log(`Finished ${testInfo.title} with status ${testInfo.status}`);
 

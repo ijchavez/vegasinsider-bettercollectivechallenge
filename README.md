@@ -33,11 +33,12 @@ I chose Playwright for this project due to its ability to easily handle modern w
 
 The following table outlines the test scenarios automated for the VegasInsider website:
 
-| Test Scenario                                                        | Description                                                                                                       |
-| -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Validate flow to sign up page                                        | Ensures the user is correctly navigated to the sign-up page when clicking the "Sign Up" button and dropdown link. |
-| Allows a new user to successfully sign up                            | Verifies that a new user can successfully complete the sign-up process by entering valid credentials.             |
-| Prevents a user from signing up if every field is blank              | Validates that the form shows appropriate error messages when all required fields are left blank during sign-up.  |
-| Prevents a user from signing up if the email is not valid            | Ensures the system shows an error message when the user enters an invalid email format during sign-up.            |
-| Prevents a user from signing up if the betting state is not selected | Checks that an error message is displayed when the betting state is not provided in the sign-up form.             |
-| Prevents a user from signing up if the email already exists          | Validates that the form displays an error message when trying to sign up with an email that is already in use.    |
+| Test Scenario                                                                  | Description                                                                                                       |
+| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| Validate flow to sign up page                                                  | Ensures the user is correctly navigated to the sign-up page when clicking the "Sign Up" button and dropdown link. |
+| Allows a new user to successfully sign up                                      | Verifies that a new user can successfully complete the sign-up process by entering valid credentials.             |
+| Prevents a user from signing up if every field is blank                        | Validates that the form shows appropriate error messages when all required fields are left blank during sign-up.  |
+| Prevents a user from signing up if the email is not valid                      | Ensures the system shows an error message when the user enters an invalid email format during sign-up.            |
+| Prevents a user from signing up if the betting state is not selected           | Checks that an error message is displayed when the betting state is not provided in the sign-up form.             |
+| Prevents a user from signing up if the email already exists                    | Validates that the form displays an error message when trying to sign up with an email that is already in use.    |
+| Prevents a user from signing up if the password is less than 6 characters long | Validates that the the user shows an appropiate message when a password less than 6 characters long is placed.    |
