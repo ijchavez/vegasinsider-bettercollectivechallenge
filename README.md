@@ -11,8 +11,8 @@ To set up the project and install the necessary dependencies, follow these steps
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/vegasinsider-automation.git
-cd vegasinsider-bettercollectivechallenge
+    git clone https://github.com/yourusername/vegasinsider-automation.git
+    cd vegasinsider-bettercollectivechallenge
 ```
 
 2. Install dependencies
@@ -30,28 +30,28 @@ cd vegasinsider-bettercollectivechallenge
 ### Structure
 
 ```
-vegasinsider-bettercollectivechallenge/
-│
-├── tests/signup
-│ ├── signUpPath.spec.ts
-│ ├── successfulSignUp.spec.ts
-│ └── unsuccessfulSignUp.spec.ts
-│
-├── pages/
-│ ├── index.ts
-│ ├── landingPage.ts
-│ ├── signUpPage.ts
-│ └── mainUserPage.ts
-│
-├── utils/
-│ └── Constants.ts
-│ └── Utils.ts
-│
-├── playwright.config.ts
-├── tsconfig.json
-├── package.json
-├── package-lock.json
-└── README.md
+    vegasinsider-bettercollectivechallenge/
+    │
+    ├── tests/signup
+    │ ├── signUpPath.spec.ts
+    │ ├── successfulSignUp.spec.ts
+    │ └── unsuccessfulSignUp.spec.ts
+    │
+    ├── pages/
+    │ ├── index.ts
+    │ ├── landingPage.ts
+    │ ├── signUpPage.ts
+    │ └── mainUserPage.ts
+    │
+    ├── utils/
+    │ └── Constants.ts
+    │ └── Utils.ts
+    │
+    ├── playwright.config.ts
+    ├── tsconfig.json
+    ├── package.json
+    ├── package-lock.json
+    └── README.md
 ```
 
 ## Why Playwright
