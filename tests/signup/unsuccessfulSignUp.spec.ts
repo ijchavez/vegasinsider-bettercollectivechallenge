@@ -8,12 +8,7 @@ import {
   VALID_EMAIL_ALREADY_TAKEN_ERROR_MSG,
   VALID_EMAIL_ERROR_MSG,
 } from "../../utils/Constants";
-import {
-  generatePassword,
-  getRandomStateCode,
-  getUser,
-  CreateUser,
-} from "../../utils/Utils";
+import { generatePassword, getUser, CreateUser } from "../../utils/Utils";
 import { faker } from "@faker-js/faker";
 
 let signUpPage: SignUpPage;

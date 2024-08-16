@@ -1,20 +1,7 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
 import { SignUpPage, MainUserPage } from "../../pages";
-import {
-  BETTING_STATE_ERROR_MSG,
-  EMAIL_ALREADY_EXISTENT,
-  PASSWORD_LENGTH_ERROR_MSG,
-  SIGN_UP_PATH,
-  VALID_EMAIL_ALREADY_TAKEN_ERROR_MSG,
-  VALID_EMAIL_ERROR_MSG,
-} from "../../utils/Constants";
-import {
-  generatePassword,
-  getRandomStateCode,
-  getUser,
-  CreateUser,
-} from "../../utils/Utils";
-import { faker } from "@faker-js/faker";
+import { SIGN_UP_PATH } from "../../utils/Constants";
+import { getUser, CreateUser } from "../../utils/Utils";
 
 let signUpPage: SignUpPage;
 let mainUserPage: MainUserPage;
